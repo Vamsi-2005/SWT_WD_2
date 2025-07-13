@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Web Application</title>
+
+  <!-- Link to External CSS for styling -->
+  <link rel="stylesheet" href="2_style.css">
+</head>
+<body>
+
+  <header>Basic Calculator </header>
+  <!-- Main Calculator Container -->
+  <div class="calculator">
+    <!-- Display Screen of Calculator -->
+    <div id="screen" class="screen">0</div>
+     <!-- Calculator Buttons -->
+    <div class="calc-buttons">
+      <!-- This is First Column for Calculator -->
+      <button onclick="clearDisplay()" class="cancel">C</button>
+      <button onclick="deleteLast()">&larr;</button>
+      <button onclick="percentage()">%</button>
+      <button onclick="typeDigit('/')">÷</button>
+
+      <!-- This is Second Column for Calculator -->
+      <button onclick="typeDigit('7')">7</button>
+      <button onclick="typeDigit('8')">8</button>
+      <button onclick="typeDigit('9')">9</button>
+      <button onclick="typeDigit('*')">&times;</button>
+
+      <!-- This is Third Column for Calculator -->
+      <button onclick="typeDigit('4')">4</button>
+      <button onclick="typeDigit('5')">5</button>
+      <button onclick="typeDigit('6')">6</button>
+      <button onclick="typeDigit('-')">&minus;</button>
+
+      <!-- This is Fourth Column for Calculator -->
+      <button onclick="typeDigit('1')">1</button>
+      <button onclick="typeDigit('2')">2</button>
+      <button onclick="typeDigit('3')">3</button>
+      <button onclick="typeDigit('+')">&plus;</button>
+
+      <!-- This is Fifth Column for Calculator -->
+      <button onclick="typeDigit('0')">0</button>
+      <button onclick="typeDigit('.')">.</button>
+      <button onclick="calculate()" class="equal">&equals;</button>
+    </div>
+  </div>
+
+
+  <!-- Link to External JavaScript File -->
+  <script src="3_Script.js"></script>
+</body>
+</html>
